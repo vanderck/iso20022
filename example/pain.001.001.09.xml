@@ -1,0 +1,123 @@
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09">
+  <CstmrCdtTrfInitn>
+    <GrpHdr>
+      <MsgId>PAYINVOICES-APRIL23</MsgId>
+      <CreDtTm>2022-10-17T12:17:00+00:00</CreDtTm>
+      <NbOfTxs>2</NbOfTxs>
+      <CtrlSum>100.00</CtrlSum>
+      <InitgPty>
+        <Nm>EUROBANK DEBTOR LTD</Nm>
+        <Id>
+          <OrgId>
+            <AnyBIC>ERBKCY2N</AnyBIC>
+            <Othr>
+              <Id>28733</Id>
+            </Othr>
+          </OrgId>
+        </Id>
+      </InitgPty>
+    </GrpHdr>
+    <PmtInf>
+      <PmtInfId>PAYINVOICES-APRIL23</PmtInfId>
+      <PmtMtd>TRF</PmtMtd>
+      <BtchBookg>false</BtchBookg>
+      <NbOfTxs>2</NbOfTxs>
+      <CtrlSum>100.00</CtrlSum>
+      <PmtTpInf>
+        <InstrPrty>NORM</InstrPrty>
+      </PmtTpInf>
+      <ReqdExctnDt>
+        <Dt>2023-05-04</Dt>
+      </ReqdExctnDt>
+      <Dbtr>
+        <Nm>EUROBANK DEBTOR LTD</Nm>
+        <Id>
+          <OrgId>
+            <Othr>
+              <Id>28733</Id>
+            </Othr>
+          </OrgId>
+        </Id>
+      </Dbtr>
+      <DbtrAcct>
+        <Id>
+          <IBAN>CY43018000010000700000007641</IBAN>
+        </Id>
+        <Ccy>EUR</Ccy>
+      </DbtrAcct>
+      <DbtrAgt>
+        <FinInstnId>
+          <BICFI>ERBKCY2N</BICFI>
+        </FinInstnId>
+      </DbtrAgt>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>PAY001</InstrId>
+          <EndToEndId>001</EndToEndId>
+        </PmtId>
+        <Amt>
+          <InstdAmt Ccy="EUR">50</InstdAmt>
+        </Amt>
+        <ChrgBr>DEBT</ChrgBr>
+        <UltmtDbtr>
+          <Nm>EUROBANK DEBTOR LTD</Nm>
+          <Id>
+            <OrgId>
+              <AnyBIC>ERBKCY2N</AnyBIC>
+            </OrgId>
+          </Id>
+        </UltmtDbtr>
+        <CdtrAgt>
+          <FinInstnId>
+            <BICFI>REVOLT21</BICFI>
+          </FinInstnId>
+        </CdtrAgt>
+        <Cdtr>
+          <Nm>BENEFICIARY 1</Nm>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>LT493250004172871093</IBAN>
+          </Id>
+        </CdtrAcct>
+        <RmtInf>
+          <Ustrd>INVOICE 1</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>PAID002</InstrId>
+          <EndToEndId>002</EndToEndId>
+        </PmtId>
+        <Amt>
+          <InstdAmt Ccy="EUR">50.00</InstdAmt>
+        </Amt>
+        <ChrgBr>SHAR</ChrgBr>
+        <UltmtDbtr>
+          <Nm>EUROBANK DEBTOR LTD</Nm>
+          <Id>
+            <OrgId>
+              <AnyBIC>ERBKCY2N</AnyBIC>
+            </OrgId>
+          </Id>
+        </UltmtDbtr>
+        <CdtrAgt>
+          <FinInstnId>
+            <BICFI>BCYPCY2N</BICFI>
+          </FinInstnId>
+        </CdtrAgt>
+        <Cdtr>
+          <Nm>BENEFICIARY 2</Nm>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>CY33002001950000357017062617</IBAN>
+          </Id>
+        </CdtrAcct>
+        <RmtInf>
+          <Ustrd>INVOICE 2</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+    </PmtInf>
+  </CstmrCdtTrfInitn>
+</Document>
