@@ -1,0 +1,6 @@
+#[derive(Debug, Default, Clone, PartialEq{% if item.derives %}, {{ item.derives | join(', ') }}{% endif %})]
+pub struct {{ item.name }} {
+{% for field in item.fields %}    {% if field.validate %}#[validate({{ field.validate }})]
+    {% endif %}#[serde(rename = "{{ field.serde_rename or field.name }}"{% if field.is_optional %}, skip_serializing_if = "Option::is_none"{% endif %})]
+    pub {{ field.name }}: {% if field.is_optional %}Option<{% endif %}{% if field.is_list %}Vec<{% endif %}{{ field.type_ }}{% if field.is_list %}>{% endif %}{% if field.is_optional %}>{% endif %},
+{% endfor %}}

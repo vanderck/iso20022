@@ -1,0 +1,8 @@
+use regex::Regex;
+use once_cell::sync::Lazy;
+
+{% for name, pattern in constants %}pub static ref {{ name }}: Lazy<Regex> = Lazy::new(|| {
+    Regex::new(r"^{{ pattern }}$").unwrap()
+});
+
+{% endfor %}
