@@ -1,0 +1,7 @@
+#[derive(Debug, Default, Clone, PartialEq{% if item.derives %}, {{ item.derives | join(', ') }}{% endif %})]
+pub enum {{ item.name }} {
+{% for variant in item.variants %}    #[serde(rename = "{{ variant }}")]
+    {{ variant.capitalize() }},
+{% endfor %}    #[default]
+    Unknown
+}
